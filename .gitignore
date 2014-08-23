@@ -1,6 +1,7 @@
 /.bundle
 /.project
 /.ruby-version
+/Rakefile
 /spec/fixtures/.librarian
 /spec/fixtures/.tmp
 /spec/fixtures/Puppetfile.lock
