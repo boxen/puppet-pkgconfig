@@ -27,7 +27,7 @@ describe 'pkgconfig' do
     end
 
     it do
-      with_constants :RUBY_PLATFORM => 'linux' do
+      with_constants :RUBY_PLATFORM => 'darwin' do
         should contain_package('gettext')
         should contain_package('pkg-config').with({
           :require => 'Package[gettext]',
