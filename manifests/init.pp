@@ -17,7 +17,7 @@ class pkgconfig {
     }
 
     package { 'boxen/brews/pkg-config': }
-    
+
     # Ensure that linuxbrew doesn't install its own version of pkg-config (as a dependency of something else) before we install ours
     Package <| $title == 'boxen/brews/pkg-config' |> -> Package <| provider != 'apt' |>
   }
